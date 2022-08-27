@@ -1,0 +1,196 @@
+$filename(html,utf-8)<?xml version = "1.0" encoding = "utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<!--
+ Song Metadata
+ SaveToText.mte
+ Created by Justin Leonard
+ -->
+<html xmlns = "http://www.w3.org/1999/xhtml" xml:lang = "en">
+	<head>
+		<meta name = "GENERATOR" content = "Song List"/>
+		<meta http-equiv = "Content-Type" content = "text/html; charset=utf-8"/>
+		<title>Song List</title>
+		<style type = "text/css"><!--
+			h1 { font-family: Verdana, Tahoma, Arial, sans-serif; font-size: 24pt; color: #000 }
+			body { font-family: Verdana, Tahoma, Arial, sans-serif; font-size: 8pt; background: #fff }
+			table, tr, td { font-family: Verdana, Tahoma, Arial, sans-serif; font-size: 9pt; color: #000; }
+			a:link, a:visited, a:active { text-decoration: none; color: #000; }
+			a:hover { text-decoration: none; color: #03f; }
+			.title { font-weight: bold; padding: 7px; margin: 0px; color: #000; }
+		--></style>
+	</head>
+	<body>
+		<h1>Song List</h1>
+		<p>By Justin Leonard</p>
+		<p>Number Of Songs: %_total_files%</p>
+		<p id = "paragraphSelected">Selected Songs: 0</p>
+		<p>&nbsp;</p>
+		<p><button type = "button" id = "buttonClear">Clear all</button></p>
+		<p><button type = "button" id = "buttonSelect">Select all</button></p>
+		<p><button type = "button" id = "buttonSave">Save to text file</button></p>
+		<table>
+			<tr>
+				<th class = "title">Select</th>
+				<th class = "title">Title</th>
+				<th class = "title">Year</th>
+				<th class = "title">Genre</th>
+			</tr>
+	$loop($regexp(%_filename%,'^The ',))
+			<tr>
+				<td align = "center"><input type = "checkbox"></input></td>
+				<td><a href = "https://www.youtube.com/results?search_query=%title%" target = "_blank" id = "link%_counter%">%title%</a></td>
+				<td>%year%</td>
+				<td>%genre%</td>
+			</tr>
+	$loopend()	</table>
+		<p>&nbsp;</p>
+		<p>List created on %_date% by Justin Leonard</p>
+		<script>
+		// Constants
+		const totalFiles = %_total_files%;
+		
+		/**
+		* Update selected song counter
+		*/
+		function updateSongCounter() {
+			// Variables
+			var i = 0;
+			var numChecked = 0;
+			var tempCheckBoxes = document.querySelectorAll("input");
+
+			// Check checkboxes
+			for (i = 0; i < tempCheckBoxes.length; i++) {
+				// Check checkbox
+				if (tempCheckBoxes'['i']'.checked) {
+					numChecked++;
+				}
+			}
+
+			// Set text
+			document.getElementById("paragraphSelected").innerHTML = "Selected Songs: " + numChecked;
+		}
+		
+		/**
+		* Clear all songs
+		*/
+		function clearSongs() {
+			// Variables
+			var i = 0;
+			var songCheckBoxes = document.querySelectorAll("input");
+
+			// Clear checkboxes
+			for (i = 0; i < songCheckBoxes.length; i++) {
+				songCheckBoxes'['i']'.checked = false;
+			}
+				
+			// Set text
+			document.getElementById("paragraphSelected").innerHTML = "Selected Songs: 0";
+		}
+		
+		/**
+		* Select all songs
+		*/
+		function selectSongs() {
+			// Variables
+			var i = 0;
+			var songCheckBoxes = document.querySelectorAll("input");
+
+			// Select checkboxes
+			for (i = 0; i < songCheckBoxes.length; i++) {
+				songCheckBoxes'['i']'.checked = true;
+			}
+				
+			// Set text
+			document.getElementById("paragraphSelected").innerHTML = "Selected Songs: " + totalFiles;
+		}
+		
+		/**
+		* Save selected songs to file
+		*/
+		function saveSongsToFile() {
+			// Variables
+			var i = 0;
+			var listCounter = 0;
+			var mainString = "";
+			var songCheckBoxes = document.querySelectorAll("input");
+
+			// Get selected songs
+			for (i = 0; i < songCheckBoxes.length; i++) {
+				// Check checkbox
+				if (songCheckBoxes'['i']'.checked) {
+					// Add to counter
+					listCounter++;
+					
+					// Add to text
+					mainString += listCounter + ". " + document.getElementById("link" + (i + 1)).innerHTML + "\r\n";
+				}
+			}
+
+			// Check if any songs selected
+			if (mainString) {
+				// Variables
+				var finalString = "Song List\r\nNumber of songs: " + listCounter + "\r\n\r\n" + mainString;
+				var saveFileDialog = document.createElement("a");
+				var saveFileRaw = new Blob('['finalString']');
+				var saveFileContents = URL.createObjectURL(saveFileRaw);
+
+				// Save file
+				saveFileDialog.setAttribute("href", saveFileContents);
+				saveFileDialog.setAttribute("download", "file.txt");
+				saveFileDialog.click();
+			} else {
+				// Error message
+				alert("Error: No songs selected");
+			}
+		}
+		
+		/**
+		* Create click events
+		*/
+		function buttonClickEvents() {
+			// Variables
+			var i = 0;
+			var songCheckBoxes = document.querySelectorAll("input");
+			
+			// Add events
+			for (i = 0; i < songCheckBoxes.length; i++) {
+				songCheckBoxes'['i']'.addEventListener("change", function() {
+					updateSongCounter();
+				});
+			}
+		}
+
+		/**
+		* Clear button click event
+		*/
+		document.getElementById("buttonClear").addEventListener("click", function() {
+			// Clear all songs
+			clearSongs();
+		});
+
+		/**
+		* Select button click event
+		*/
+		document.getElementById("buttonSelect").addEventListener("click", function() {
+			// Select all songs
+			selectSongs();
+		});
+
+		/**
+		* Save button click event
+		*/
+		document.getElementById("buttonSave").addEventListener("click", function() {
+			// Save all checked songs to a file
+			saveSongsToFile();
+		});
+
+		/**
+		* Window load event
+		*/
+		window.addEventListener("load", function() {
+			// Create button click events
+			buttonClickEvents();
+		});
+		</script>
+	</body>
+</html>

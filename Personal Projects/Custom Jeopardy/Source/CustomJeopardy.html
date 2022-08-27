@@ -1,0 +1,121 @@
+<!doctype html>
+<!--
+ Custom Jeopardy
+ CustomJeopardy.html
+ Created by Justin Leonard
+ -->
+<html>
+  <head>
+    <title>Custom Jeopardy</title>
+    <script src = "CustomJeopardy.js"></script>
+    <style type = "text/css"><!--
+    h1, p, th { font-family: Verdana, Tahoma, Arial, sans-serif; white-space: nowrap; }
+	button { border: none; }
+    --></style>
+  </head>
+  <body>
+  	<h1 align = "center">Custom Jeopardy</h1>
+	<table align = "center">
+		<tr>
+			<th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+			<th>Math</th>
+			<th>Science</th>
+			<th>Games</th>
+			<th>Movies</th>
+			<th>Music</th>
+			<th>History</th>
+			<th>Random</th>
+		</tr>
+		<tr>
+			<th>1</th>
+			<td><button type = "button" style = "height: 64px; width: 64px; background: url(images/block_math.png)" id = "button0_0"  onclick = "buttonClear('button0_0');buttonMessage('Question0_0','Answer0_0')"></button></td>
+			<td><button type = "button" style = "height: 64px; width: 64px; background: url(images/block_science.png)" id = "button0_1"  onclick = "buttonClear('button0_1');buttonMessage('Question0_1','Answer0_1')"></button></td>
+			<td><button type = "button" style = "height: 64px; width: 64px; background: url(images/block_games.png)" id = "button0_2"  onclick = "buttonClear('button0_2');buttonMessage('Question0_2','Answer0_2')"></button></td>
+			<td><button type = "button" style = "height: 64px; width: 64px; background: url(images/block_movies.png)" id = "button0_3"  onclick = "buttonClear('button0_3');buttonMessage('Question0_3','Answer0_3')"></button></td>
+			<td><button type = "button" style = "height: 64px; width: 64px; background: url(images/block_music.png)" id = "button0_4"  onclick = "buttonClear('button0_4');buttonMessage('Question0_4','Answer0_4')"></button></td>
+			<td><button type = "button" style = "height: 64px; width: 64px; background: url(images/block_history.png)" id = "button0_5"  onclick = "buttonClear('button0_5');buttonMessage('Question0_5','Answer0_5')"></button></td>
+			<td><button type = "button" style = "height: 64px; width: 64px; background: url(images/block_random.png)" id = "button0_6"  onclick = "buttonClear('button0_6');buttonMessage('Question0_6','Answer0_6')"></button></td>
+		</tr>
+		<tr>
+			<th>2</th>
+			<td><button type = "button" style = "height: 64px; width: 64px; background: url(images/block_math.png)" id = "button1_0"  onclick = "buttonClear('button1_0');buttonMessage('Question1_0','Answer1_0')"></button></td>
+			<td><button type = "button" style = "height: 64px; width: 64px; background: url(images/block_science.png)" id = "button1_1"  onclick = "buttonClear('button1_1');buttonMessage('Question1_1','Answer1_1')"></button></td>
+			<td><button type = "button" style = "height: 64px; width: 64px; background: url(images/block_games.png)" id = "button1_2"  onclick = "buttonClear('button1_2');buttonMessage('Question1_2','Answer1_2')"></button></td>
+			<td><button type = "button" style = "height: 64px; width: 64px; background: url(images/block_movies.png)" id = "button1_3"  onclick = "buttonClear('button1_3');buttonMessage('Question1_3','Answer1_3')"></button></td>
+			<td><button type = "button" style = "height: 64px; width: 64px; background: url(images/block_music.png)" id = "button1_4"  onclick = "buttonClear('button1_4');buttonMessage('Question1_4','Answer1_4')"></button></td>
+			<td><button type = "button" style = "height: 64px; width: 64px; background: url(images/block_history.png)" id = "button1_5"  onclick = "buttonClear('button1_5');buttonMessage('Question1_5','Answer1_5')"></button></td>
+			<td><button type = "button" style = "height: 64px; width: 64px; background: url(images/block_random.png)" id = "button1_6"  onclick = "buttonClear('button1_6');buttonMessage('Question1_6','Answer1_6')"></button></td>
+		</tr>
+		<tr>
+			<th>3</th>
+			<td><button type = "button" style = "height: 64px; width: 64px; background: url(images/block_math.png)" id = "button2_0"  onclick = "buttonClear('button2_0');buttonMessage('Question2_0','Answer2_0')"></button></td>
+			<td><button type = "button" style = "height: 64px; width: 64px; background: url(images/block_science.png)" id = "button2_1"  onclick = "buttonClear('button2_1');buttonMessage('Question2_1','Answer2_1')"></button></td>
+			<td><button type = "button" style = "height: 64px; width: 64px; background: url(images/block_games.png)" id = "button2_2"  onclick = "buttonClear('button2_2');buttonMessage('Question2_2','Answer2_2')"></button></td>
+			<td><button type = "button" style = "height: 64px; width: 64px; background: url(images/block_movies.png)" id = "button2_3"  onclick = "buttonClear('button2_3');buttonMessage('Question2_3','Answer2_3')"></button></td>
+			<td><button type = "button" style = "height: 64px; width: 64px; background: url(images/block_music.png)" id = "button2_4"  onclick = "buttonClear('button2_4');buttonMessage('Question2_4','Answer2_4')"></button></td>
+			<td><button type = "button" style = "height: 64px; width: 64px; background: url(images/block_history.png)" id = "button2_5"  onclick = "buttonClear('button2_5');buttonMessage('Question2_5','Answer2_5')"></button></td>
+			<td><button type = "button" style = "height: 64px; width: 64px; background: url(images/block_random.png)" id = "button2_6"  onclick = "buttonClear('button2_6');buttonMessage('Question2_6','Answer2_6')"></button></td>
+		</tr>
+		<tr>
+			<th>4</th>
+			<td><button type = "button" style = "height: 64px; width: 64px; background: url(images/block_math.png)" id = "button3_0"  onclick = "buttonClear('button3_0');buttonMessage('Question3_0','Answer3_0')"></button></td>
+			<td><button type = "button" style = "height: 64px; width: 64px; background: url(images/block_science.png)" id = "button3_1"  onclick = "buttonClear('button3_1');buttonMessage('Question3_1','Answer3_1')"></button></td>
+			<td><button type = "button" style = "height: 64px; width: 64px; background: url(images/block_games.png)" id = "button3_2"  onclick = "buttonClear('button3_2');buttonMessage('Question3_2','Answer3_2')"></button></td>
+			<td><button type = "button" style = "height: 64px; width: 64px; background: url(images/block_movies.png)" id = "button3_3"  onclick = "buttonClear('button3_3');buttonMessage('Question3_3','Answer3_3')"></button></td>
+			<td><button type = "button" style = "height: 64px; width: 64px; background: url(images/block_music.png)" id = "button3_4"  onclick = "buttonClear('button3_4');buttonMessage('Question3_4','Answer3_4')"></button></td>
+			<td><button type = "button" style = "height: 64px; width: 64px; background: url(images/block_history.png)" id = "button3_5"  onclick = "buttonClear('button3_5');buttonMessage('Question3_5','Answer3_5')"></button></td>
+			<td><button type = "button" style = "height: 64px; width: 64px; background: url(images/block_random.png)" id = "button3_6"  onclick = "buttonClear('button3_6');buttonMessage('Question3_6','Answer3_6')"></button></td>
+		</tr>
+		<tr>
+			<th>5</th>
+			<td><button type = "button" style = "height: 64px; width: 64px; background: url(images/block_math.png)" id = "button4_0"  onclick = "buttonClear('button4_0');buttonMessage('Question4_0','Answer4_0')"></button></td>
+			<td><button type = "button" style = "height: 64px; width: 64px; background: url(images/block_science.png)" id = "button4_1"  onclick = "buttonClear('button4_1');buttonMessage('Question4_1','Answer4_1')"></button></td>
+			<td><button type = "button" style = "height: 64px; width: 64px; background: url(images/block_games.png)" id = "button4_2"  onclick = "buttonClear('button4_2');buttonMessage('Question4_2','Answer4_2')"></button></td>
+			<td><button type = "button" style = "height: 64px; width: 64px; background: url(images/block_movies.png)" id = "button4_3"  onclick = "buttonClear('button4_3');buttonMessage('Question4_3','Answer4_3')"></button></td>
+			<td><button type = "button" style = "height: 64px; width: 64px; background: url(images/block_music.png)" id = "button4_4"  onclick = "buttonClear('button4_4');buttonMessage('Question4_4','Answer4_4')"></button></td>
+			<td><button type = "button" style = "height: 64px; width: 64px; background: url(images/block_history.png)" id = "button4_5"  onclick = "buttonClear('button4_5');buttonMessage('Question4_5','Answer4_5')"></button></td>
+			<td><button type = "button" style = "height: 64px; width: 64px; background: url(images/block_random.png)" id = "button4_6"  onclick = "buttonClear('button4_6');buttonMessage('Question4_6','Answer4_6')"></button></td>
+		</tr>
+		<tr>
+			<th>6</th>
+			<td><button type = "button" style = "height: 64px; width: 64px; background: url(images/block_math.png)" id = "button5_0"  onclick = "buttonClear('button5_0');buttonMessage('Question5_0','Answer5_0')"></button></td>
+			<td><button type = "button" style = "height: 64px; width: 64px; background: url(images/block_science.png)" id = "button5_1"  onclick = "buttonClear('button5_1');buttonMessage('Question5_1','Answer5_1')"></button></td>
+			<td><button type = "button" style = "height: 64px; width: 64px; background: url(images/block_games.png)" id = "button5_2"  onclick = "buttonClear('button5_2');buttonMessage('Question5_2','Answer5_2')"></button></td>
+			<td><button type = "button" style = "height: 64px; width: 64px; background: url(images/block_movies.png)" id = "button5_3"  onclick = "buttonClear('button5_3');buttonMessage('Question5_3','Answer5_3')"></button></td>
+			<td><button type = "button" style = "height: 64px; width: 64px; background: url(images/block_music.png)" id = "button5_4"  onclick = "buttonClear('button5_4');buttonMessage('Question5_4','Answer5_4')"></button></td>
+			<td><button type = "button" style = "height: 64px; width: 64px; background: url(images/block_history.png)" id = "button5_5"  onclick = "buttonClear('button5_5');buttonMessage('Question5_5','Answer5_5')"></button></td>
+			<td><button type = "button" style = "height: 64px; width: 64px; background: url(images/block_random.png)" id = "button5_6"  onclick = "buttonClear('button5_6');buttonMessage('Question5_6','Answer5_6')"></button></td>
+		</tr>
+		<tr>
+			<th>7</th>
+			<td><button type = "button" style = "height: 64px; width: 64px; background: url(images/block_math.png)" id = "button6_0"  onclick = "buttonClear('button6_0');buttonMessage('Question6_0','Answer6_0')"></button></td>
+			<td><button type = "button" style = "height: 64px; width: 64px; background: url(images/block_science.png)" id = "button6_1"  onclick = "buttonClear('button6_1');buttonMessage('Question6_1','Answer6_1')"></button></td>
+			<td><button type = "button" style = "height: 64px; width: 64px; background: url(images/block_games.png)" id = "button6_2"  onclick = "buttonClear('button6_2');buttonMessage('Question6_2','Answer6_2')"></button></td>
+			<td><button type = "button" style = "height: 64px; width: 64px; background: url(images/block_movies.png)" id = "button6_3"  onclick = "buttonClear('button6_3');buttonMessage('Question6_3','Answer6_3')"></button></td>
+			<td><button type = "button" style = "height: 64px; width: 64px; background: url(images/block_music.png)" id = "button6_4"  onclick = "buttonClear('button6_4');buttonMessage('Question6_4','Answer6_4')"></button></td>
+			<td><button type = "button" style = "height: 64px; width: 64px; background: url(images/block_history.png)" id = "button6_5"  onclick = "buttonClear('button6_5');buttonMessage('Question6_5','Answer6_5')"></button></td>
+			<td><button type = "button" style = "height: 64px; width: 64px; background: url(images/block_random.png)" id = "button6_6"  onclick = "buttonClear('button6_6');buttonMessage('Question6_6','Answer6_6')"></button></td>
+		</tr>
+		<tr>
+			<th>8</th>
+			<td><button type = "button" style = "height: 64px; width: 64px; background: url(images/block_math.png)" id = "button7_0"  onclick = "buttonClear('button7_0');buttonMessage('Question7_0','Answer7_0')"></button></td>
+			<td><button type = "button" style = "height: 64px; width: 64px; background: url(images/block_science.png)" id = "button7_1"  onclick = "buttonClear('button7_1');buttonMessage('Question7_1','Answer7_1')"></button></td>
+			<td><button type = "button" style = "height: 64px; width: 64px; background: url(images/block_games.png)" id = "button7_2"  onclick = "buttonClear('button7_2');buttonMessage('Question7_2','Answer7_2')"></button></td>
+			<td><button type = "button" style = "height: 64px; width: 64px; background: url(images/block_movies.png)" id = "button7_3"  onclick = "buttonClear('button7_3');buttonMessage('Question7_3','Answer7_3')"></button></td>
+			<td><button type = "button" style = "height: 64px; width: 64px; background: url(images/block_music.png)" id = "button7_4"  onclick = "buttonClear('button7_4');buttonMessage('Question7_4','Answer7_4')"></button></td>
+			<td><button type = "button" style = "height: 64px; width: 64px; background: url(images/block_history.png)" id = "button7_5"  onclick = "buttonClear('button7_5');buttonMessage('Question7_5','Answer7_5')"></button></td>
+			<td><button type = "button" style = "height: 64px; width: 64px; background: url(images/block_random.png)" id = "button7_6"  onclick = "buttonClear('button7_6');buttonMessage('Question7_6','Answer7_6')"></button></td>
+		</tr>
+		<tr>
+			<th>9</th>
+			<td><button type = "button" style = "height: 64px; width: 64px; background: url(images/block_math.png)" id = "button8_0"  onclick = "buttonClear('button8_0');buttonMessage('Question8_0','Answer8_0')"></button></td>
+			<td><button type = "button" style = "height: 64px; width: 64px; background: url(images/block_science.png)" id = "button8_1"  onclick = "buttonClear('button8_1');buttonMessage('Question8_1','Answer8_1')"></button></td>
+			<td><button type = "button" style = "height: 64px; width: 64px; background: url(images/block_games.png)" id = "button8_2"  onclick = "buttonClear('button8_2');buttonMessage('Question8_2','Answer8_2')"></button></td>
+			<td><button type = "button" style = "height: 64px; width: 64px; background: url(images/block_movies.png)" id = "button8_3"  onclick = "buttonClear('button8_3');buttonMessage('Question8_3','Answer8_3')"></button></td>
+			<td><button type = "button" style = "height: 64px; width: 64px; background: url(images/block_music.png)" id = "button8_4"  onclick = "buttonClear('button8_4');buttonMessage('Question8_4','Answer8_4')"></button></td>
+			<td><button type = "button" style = "height: 64px; width: 64px; background: url(images/block_history.png)" id = "button8_5"  onclick = "buttonClear('button8_5');buttonMessage('Question8_5','Answer8_5')"></button></td>
+			<td><button type = "button" style = "height: 64px; width: 64px; background: url(images/block_random.png)" id = "button8_6"  onclick = "buttonClear('button8_6');buttonMessage('Question8_6','Answer8_6')"></button></td>
+		</tr>
+	</table>
+  </body>
+</html>
