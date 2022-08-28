@@ -29,8 +29,8 @@ Each button can be a question, event, or whatever the host wants. Each question 
 The media types are ImageImage, ImageVideoImageImage, ImageVideoImageVideo, VideoImageImage, and VideoImageVideo. <br />
 What ever media type the user selects for a specific question will be what assets the program looks for and displays. <br />
 
-For example, if "ImageVideoImageVideo" is the media type of "QuestionX_Y" where X is the category and Y is the question number: <br />
-The program will search for "Prompts/PromptX_Y.png", "Questions/QuestionX_Ya.mp4", "Questions/QuestionX_Yb.png", and "Answers/AnswerX_Y.mp4". <br />
+For example, if "ImageVideoImageVideo" is the media type of "QuestionX\_Y" where X is the category and Y is the question number: <br />
+The program will search for "Prompts/PromptX\_Y.png", "Questions/QuestionX\_Ya.mp4", "Questions/QuestionX\_Yb.png", and "Answers/AnswerX\_Y.mp4". <br />
 If the files for the selected media type of a specific question are not present, an error will occur. <br />
 
 The folder "<User Name>\AppData\Local\Custom Game Show" stores the images and videos for the entire application. <br />
