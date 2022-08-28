@@ -5,7 +5,7 @@
 
 **Assets Location:** <br />
 "Icons" and "Images" are resources <br />
-"Media" goes in "<User Name>\AppData\Local\Custom Game Show" <br />
+"Media" goes in "\<User Name\>\AppData\Local\Custom Game Show" <br />
 
 **Information:** <br />
 This project was made as an updated version of "Custom Jeopardy", which is another project in this portfolio. <br />
