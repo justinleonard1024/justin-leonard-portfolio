@@ -48,7 +48,7 @@ Penetration Testing Report <br />
 URI Network Documentation <br />
 <br />
 <br />
-**My contact details:** <br />
+**Contact Details:** <br />
 
 Justin Leonard <br />
 (401) 206-8975 <br />
