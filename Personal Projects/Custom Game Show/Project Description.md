@@ -33,5 +33,5 @@ For example, if "ImageVideoImageVideo" is the media type of "QuestionX\_Y" where
 The program will search for "Prompts/PromptX\_Y.png", "Questions/QuestionX\_Ya.mp4", "Questions/QuestionX\_Yb.png", and "Answers/AnswerX\_Y.mp4". <br />
 If the files for the selected media type of a specific question are not present, an error will occur. <br />
 
-The folder "<User Name>\AppData\Local\Custom Game Show" stores the images and videos for the entire application. <br />
+The folder "\<User Name\>\AppData\Local\Custom Game Show" stores the images and videos for the entire application. <br />
 The user will modify these files to have whatever media suits the game show they are creating.
