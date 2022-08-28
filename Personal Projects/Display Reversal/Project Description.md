@@ -18,4 +18,4 @@ I use the Windows command line tool "nircmd" to set the primary display. <br />
 When the program is executed, it will check which screen is set as the primary display. <br />
 If the primary display is screen 1, it will change it to screen 2. <br />
 If the primary display is screen 2, it will change it to screen 1. <br />
-It executes immediately and seamlessly changes the primary display. <br />
+It executes immediately and seamlessly changes the primary display.
