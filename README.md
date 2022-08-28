@@ -52,4 +52,4 @@ URI Network Documentation <br />
 
 Justin Leonard <br />
 (401) 206-8975 <br />
-justinleonard1024@gmail.com <br />
+justinleonard1024@gmail.com
