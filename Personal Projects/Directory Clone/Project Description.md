@@ -15,9 +15,9 @@ This application will copy the source directory and all subdirectories to the ta
 There are different modes the application can run in. The mode will determine the copy settings.
 The modes are normal, blank, ignore, and used.
 
-If the program mode is normal, all files will be copied normally. The source and target will be identical.
-If the program mode is blank, all files will be copied with blank versions of the originals. The contents are replaced with the file information as text. 
-If the program mode is ignore, all files that don't have the ignored extensions will be blank copied and the rest normal copied.
+If the program mode is normal, all files will be copied normally. The source and target will be identical. <br />
+If the program mode is blank, all files will be copied with blank versions of the originals. The contents are replaced with the file information. <br />
+If the program mode is ignore, all files that don't have the ignored extensions will be blank copied and the rest normal copied. <br />
 If the program mode is used, all files that only have the extensions will be normal copied.
 
 This allows for much more versatile and quicker file transfer.
