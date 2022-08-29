@@ -10,7 +10,7 @@ The "Personal Projects" folder contains various programming projects I made for 
 The "School Projects" folder contains programming projects I made in college courses. <br />
 The "School Research" folder contains various research assignments and reports I made in college courses. <br />
 
-My resume is also included in this portfolio with the file "resume.pdf". <br />
+My resume is also included in this portfolio with the file "Resume.pdf". <br />
 Feel free to browse my portfolio and work. <br />
 <br />
 <br />
